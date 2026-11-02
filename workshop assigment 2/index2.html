@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Laurin ensimmäinen sivu</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        p {
+            color: #444444;
+            font-size: 16px;
+        }
+
+        .content-box {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d9e6f2;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin-top: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: red;">Tervetuloa Laurin nettisivulle!</h1>
+
+    <p>Tykkaan tehdä pitkia kavelyja ja maistella erinlaisia ja joskus harvinaisempia ruokia tai juomia.</p>
+
+    <img src="images/omanaamakuva.jpg"
+         alt="Kuva omasta naamasta"
+         width="300">
+
+    <h2>Listani harrastuksistani suosikkijarjestyksessa.</h2>
+
+    <ol>
+        <li>Kavella metsissa</li>
+        <li>Tehda ruokaa</li>
+        <li>Pelata videopeleja</li>
+    </ol>
+
+    <h2>Toinen lista harrastuksistani, mutta sattumanvaraisessa jarjestyksessa.</h2>
+
+    <ul>
+        <li>Simulaattorilla kisaaminen</li>
+        <li>Kavella metsissa</li>
+        <li>Pelata shakkia</li>
+    </ul>
+
+    <a href="https://www.laurea.fi">Laurean nettisivut</a>
+
+    <table>
+        <tr>
+            <th>Ylapuolen nettisivustolla voi katsoa Laurean sivustoa</th>
+        </tr>
+        <tr>
+            <td>Talla hetkella, koen etta tämä kurssi menee hyvin.</td>
+            <td>Tehtavat ovat joskus vaikeita minulle, mutta yritan tehda ne ajoissa.</td>
+        </tr>
+        <tr>
+            <td>Alle, voit kirjoittaa oma nimesi ja sahkopostisi.</td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
