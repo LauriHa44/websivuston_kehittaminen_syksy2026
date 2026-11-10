@@ -91,3 +91,15 @@ p::first-letter {
     color: steelblue;
     font-weight: bold;
 }
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+    list-style: none;
+}
