@@ -1,131 +1,105 @@
-p {
-      color: blue;
+@keyframes slideInDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
     }
-    
-    body {
-      background-color: lightgray;
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
-    
-    h1 {
-      font-size: 2em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-
-    p {
-      font-size: 1em;
-    }
-
-    .content-box {
-  padding: 20px;
-  margin: 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
 }
 
-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-    
-    th {
-      background-color: #f2f2f2;
-    }
-    
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    label {
-      font-weight: bold;
-    }
-    
-    input[type="text"], input[type="email"] {
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-    
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
+.animated-banner {
+    background-color: steelblue;
+    color:white;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    animation: slideInDown 1s ease-out;
+}
 
-.transition-button {
-        background-color: lightblue;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-          
-        .transition-button:hover {
-          background-color: lightcoral;
-        }
-        
-.animation-box {
-        width: 50px;
-        height: 50px;
-        background-color: lightgreen;
-        position: relative;
-        animation: move 2s infinite alternate;
-      }
-      
-      @keyframes move {
-        from {
-          left: 0;
-        }
-        to {
-          left: 100px;
-        }
-      }
+body {
+    padding: 0 24px;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
 
-.pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
-      }
-      
-      .pseudo-list li:nth-child(even) {
-        background-color: white;
-      }
+img:hover {
+    filter: none;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
 
-.filter-image {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-      }
-      
-      .filter-image:hover {
-        filter: grayscale(0%);
-      }
+img {
+    width: 100px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 16px 0;
+    filter: grayscale(100%) brightness(80%);
+    transition: all 0.5s ease-in-out;
+}
 
-.quote {
-        position: relative;
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ol li:nth-child(odd) {
+        background-color: #f9f9f9;
+        border-radius: 4px;
         padding-left: 20px;
-        font-style: italic;
-      }
-      
-      .quote::before {
-        content: '“';
-        font-size: 40px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: lightgray;
-      }
+}
+
+ul li:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+form input[type="submit"] {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+h2::before {
+    content: ", ";
+    color: steelblue;
+}
+
+p::first-letter {
+    font-size: 2rem;
+    color: steelblue;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+    list-style: none;
+}
