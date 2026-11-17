@@ -90,13 +90,21 @@ table {
         }
       }
 
-.pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
-      }
+.pseudo-list li:nth-child(1) {
+        background-color: lightcoral;
+}
       
-      .pseudo-list li:nth-child(even) {
-        background-color: white;
-      }
+.pseudo-list li:nth-child(2) {
+        background-color: lightyellow;
+}
+
+.pseudo-list li:nth-child(3) {
+        background-color: lightblue;
+}
+      
+.pseudo-list li:nth-child(4) {
+        background-color: lightgreen;
+}
 
 .filter-image {
         filter: grayscale(100%);
