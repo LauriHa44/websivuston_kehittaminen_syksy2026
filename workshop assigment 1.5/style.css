@@ -14,12 +14,12 @@
       }
     }
 
-    .responsive-image {
+.responsive-image {
       max-width: 100%;
       height: auto;
     }
 
-    .media-query-box {
+.media-query-box {
       padding: 20px;
       text-align: center;
     }
@@ -36,7 +36,7 @@
       }
     }
 
-    .responsive-nav .nav-list {
+.responsive-nav .nav-list {
       display: flex;
       list-style: none;
     }

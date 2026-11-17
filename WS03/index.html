@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <title>Laurin ensimmäinen sivu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img src="images/omanaamakuva.jpg"
-         alt="Kuva omasta naamasta"
-         width="300">
+<meta charset="UTF-8">
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Laurin ensimmäinen HTML nettisivuni</title>
+    </head>
+    <body>
+        <h1>Tervetuloa netttisivulle</h1>
+        <p>Toivottavasti nautit vierailusta.</p>
+        <img src="images/omanaamakuva.jpg" alt="Kuva omasta naamasta" width="300">
 
-    <h1 style="color: red;">Tervetuloa Laurin nettisivulle!</h1>
-    <p>Tykkään tehdä pitkiä kävelyjä ja maistella erilaisia ja joskus harvinaisempia ruokia tai juomia.</p>
-
-    <h2>Listani harrastuksistani suosikkijärjestyksessä.</h2>
+<h2>Järjestelty lista aakkosjärjestyksessä</h2>
     <ol>
-        <li>Kävella metsissä</li>
-        <li>Tehdä ruokaa</li>
-        <li>Pelata videopelejä</li>
+        <li>Auto</li>
+        <li>Hedelmäkakku</li>
+        <li>Vaihteisto</li>
     </ol>
-
-    <h2>Toinen lista harrastuksistani, mutta sattumanvaraisessa järjestyksessä.</h2>
+    
+    <h2>Lista ilman järjestystä, kuten esimerkiksi ostoslista kauppaa varten</h2>
     <ul>
-        <li>Simulaattorilla kisaaminen</li>
-        <li>Kävella metsissä</li>
-        <li>Pelata shakkia</li>
+        <li>Leipä</li>
+        <li>Suola</li>
+        <li>Peruna</li>
     </ul>
 
-    <a href="https://www.laurea.fi">Laurea Website</a>
+        <a href="https://www.laurea.fi">Tästä voit vierailla Laurean nettisivulla</a>
 
-    <table>
-        <tr>
-            <th>Info</th>
-            <th>Lisätietoja</th>
-        </tr>
-        <tr>
-            <td>Yläpuolen nettisivustolla voi katsoa Laurean sivustoa</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Tällä hetkellä, koen että tämä kurssi menee hyvin.</td>
-            <td>Tehtävät ovat joskus vaikeita minulle, mutta yritän tehdä ne ajoissa.</td>
-        </tr>
+<table>
+    <tr>
+        <th>Omasta mielestä kurssit menevät hyvin</th>
+        <th>Tehtävät yritän aina saada ajoissa tehtyä.</th>
+    </tr>
+    <tr>
+        <td>Välillä on vaikeuksia, mutta niiden yli pääsee.</td>
+        <td>Esimerkiksi oman kokemuksen takia, IT-kurssit ovat olleet helppoja, kun aihe josta ei ole paljoa kokemusta, on vaikeampi.</td>
+    </tr>
+    <tr>
+        <td>Näitä kurrsseja on, ja niissä ovat omat kokemukset ja haasteet.</td>
+        <td>En kuitenkaan näe opiskelemista vaikeana, ja olen nauttinut opetuksesta.</td>
+    </tr>
     </table>
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
+<form>
+    <label for="name">Nimi:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Sähköposti:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
     </form>
 
-    <div class="content-box">
-  <h3>Esimerkki</h3>
-  <p>Tämä on esimerkkiparagrafi div-elementin sisällä.</p>
+<h1 style="color: red;">Tässä on punainen otsikko</h1>
+
+<style>
+    h1 {
+      color: green;
+    }
+    </style>
+
+<div class="content-box">
+  <h3>Esimerkkikappale</h3>
+  <p>Tässä on esimerkkikappale div-elementin sisällä.</p>
 </div>
-    <div class="animation-box"></div>
 
-    <ul class="pseudo-list">
+<button class="transition-button">Pidä osoitin tämän päällä.</button>
+
+<div class="animation-box"></div>
+
+<ul class="pseudo-list">
         <li>Banaani</li>
-        <li>Appelsiini</li>
-        <li>Ananas</li>
-        <li>Mandariini</li>
-    </ul>
+        <li>Omena</li>
+        <li>Vesimelooni</li>
+        <li>Porkkana</li>
+      </ul>
 
-    <blockquote class="quote">
-        Tämä on esimerkki lainaus.
-    </blockquote>
+<img src="./images/shogun-forest-6790124_1920.jpg" alt="Kuva metsästä" class="filter-image">
 
-    <button class="transition-button">Pidä osoitin minun päällä</button>
+<blockquote class="quote">
+        This is a sample quote.
+      </blockquote>
 
-    <img src="images/shogun-forest-6790124_1920.jpg" alt="Kuva metsästä">
-    
 </body>
 </html>
